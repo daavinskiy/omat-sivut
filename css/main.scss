@@ -1,0 +1,118 @@
+$primary-color: #000;
+$secondary-color: #333333;
+
+html {
+    background-color: #fafafa;
+    text-align: center;
+}
+
+* {
+    color: $primary-color;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #22c1c3, #ba2dfd, #22aec3, #9622c3);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.cv {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*h*/
+h1 {
+    color: $primary-color;
+    margin-bottom: 0.25em;
+    padding-top: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    color: $primary-color;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h4 {
+    color: $primary-color;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*contacts*/
+.contacts {
+    margin-bottom: 2em;
+}
+
+.contact {
+    display: block;
+
+    &__type {
+        min-width: 90px;
+    }
+}
+
+.description {
+    padding-bottom: 50px;
+}
+
+/*a*/
+a {
+    color: $primary-color;
+
+    transition: color .2s linear;
+}
+
+a:visited {
+    color: $primary-color
+}
+
+a:hover {
+    color: #fff;
+}
+
+a:active {
+    color: $secondary-color
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+/*class*/
+.link {
+    text-decoration: none;
+}
